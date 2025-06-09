@@ -9,6 +9,11 @@ public class Hero {
         this.name = name;
     }
 
+    //コンストラクタのオーバーロード
+    public Hero() {
+        this("ダミー"); //別コンストラクタの呼び出しをJVMに依頼する
+    }
+
     public void sleep() {
         this.hp = 100;
         System.out.println(this.name + "は、眠って回復した！");
